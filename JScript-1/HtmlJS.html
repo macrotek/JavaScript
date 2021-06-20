@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>JavaScriptDemo1</title>
+		<style>
+			.center {
+						display: block;
+						margin-left: 35%;
+						margin-right: auto;
+					    width: 50%;
+						color:Red;
+					}
+					#id1 {
+						display: block;
+						margin-left: auto;
+						margin-right: auto;
+					    width:200px;
+						height:200px;
+					}
+					#i2{
+						  position: absolute;
+						  left: 570px;
+						  top: 450px;
+					}
+					#i3{
+						  position: absolute;
+						  left: 730px;
+						  top: 450px;
+					}
+					
+		</style>
+	</head>
+	<body>
+		<div id="1">
+		<h1 class="center"> Woooooow.....! Bulb is Dancing</h1></br></br></br>
+		<img src="Images/pic_bulboff.gif" id="id1" alt="Here is Bulb Image" >
+		</div></br></br>
+		 &nbsp; &nbsp;
+		<button type="button" id="i2" onclick="light(1)" style="height:30px; width:70px; color:green; background-color:black;"><b>ON</button>
+		&nbsp; &nbsp;
+		<button type="button" id="i3" onclick="light(0)" style="height:30px; width:70px; color:red; background-color:black;"><b>OFF</button>
+			<script>
+				function light(sw){
+					var pic;
+					if(sw==0)
+					pic = "Images/pic_bulboff.gif";
+					else
+					pic = "Images/pic_bulbon.gif";
+					
+					document.getElementById("id1").src = pic;
+				}
+				
+			</script>
+	</body>
+</html>
